@@ -1,0 +1,610 @@
+body {
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+
+.cabecalho {
+    border: 5px solid red;
+    border-radius: 20px;
+    height: 50px;
+    
+    
+
+}
+
+.logo {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    background-color: white 0.0;
+    
+    position: fixed;
+    
+
+    
+
+    border-radius: 10px;
+    height: 35px;
+
+  
+    
+
+
+}
+
+li {
+    padding-right: 15px;
+    font-size: 14pt;
+    color: black;
+    font-weight: 800;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid lightskyblue;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    color: black;
+    
+}
+
+a:hover{
+    color: white;
+    padding: 2px;
+}
+
+.nome-propriedade {
+    font-size: 2em;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+
+
+}
+
+.titulo-pagina {
+    text-align: center;
+    font-style: italic;
+    font-size: 3em;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkblue;
+}
+
+.valor-propriedade {
+    font-size: 20pt;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    
+
+
+}
+
+/* Configuração com linhas display flex e reverso */
+.container-row {
+    /* Display: flex Ativa o FlexBox */
+    display: flex;
+
+    /* Direciona o container Flex Box */
+    flex-direction: row;
+
+    /* gap: 50px; */
+
+    /* Indiferente para o flex box */
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+
+}
+
+
+
+
+.container-rowreverse {
+    display: flex;
+    flex-direction: row-reverse;
+
+    /* gap: 50px; */
+
+    /* Indiferente para o flex box */
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+
+
+}
+
+/* Configuração com colunas display flex e reverso */
+.container-column {
+    display: flex;
+    flex-direction: column;
+
+    /* gap: 50px; */
+
+    /* Indiferente para o flex box */
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+
+
+}
+
+.container-columnreverse {
+    display: flex;
+    flex-direction: column-reverse;
+
+    /* gap: 50px; */
+
+    /* Indiferente para o flex box */
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+
+
+}
+
+
+
+/* Configuração dos blocos */
+
+.bloco1 {
+    background-color: lightskyblue;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    border: 5px solid black;
+
+
+
+}
+
+
+.bloco2 {
+    background-color: lightcyan;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    border: 5px solid black;
+
+
+
+}
+
+.bloco3 {
+    background-color: lightgray;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    border: 5px solid black;
+
+}
+
+
+
+
+
+
+
+
+/* Utilizando o Justify-Content - Eixo Principal ou Primário */
+
+.container-justify-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+
+}
+
+.container-justify-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+.container-justify-end {
+
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+.flexend {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.container-justify-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+.container-justify-space-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+.container-justify-space-evenly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+/* Flexbox - Utilizando o Align-Itens - Alinha os objetos mo Eixo Secundário*/
+
+.container-justify-align-itens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+
+}
+
+
+.container-justify-align-itens-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+.container-justify-align-itens-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+
+
+
+/* Bloco sem Altura com Stretch */
+
+.container-align-itens-Stretch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+.bloco1-sem-altura {
+    background-color: lightskyblue;
+    
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    border: 5px solid black;
+
+
+
+}
+
+
+.bloco2-sem-altura {
+    background-color: lightcyan;
+    
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    border: 5px solid black;
+
+
+
+}
+
+.bloco3-sem-altura {
+    background-color: lightgray;
+    
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    border: 5px solid black;
+
+}
+
+
+
+/* Bloco Align-itens: Baseline */
+
+.container-align-itens-Baseline{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+.bloco1-baseline {
+    background-color: lightskyblue;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    border: 5px solid black;
+
+
+
+}
+
+
+
+
+.bloco2-baseline  {
+    background-color: lightcyan;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    border: 5px solid black;
+
+
+
+}
+
+.bloco3-baseline  {
+    background-color: lightgray;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    border: 5px solid black;
+
+}
+
+
+/* FLEX WRAP FICAM ESPREMIDOS NO WRAP */
+
+.container-flexwrap-nowrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+/* FLEX WRAP QUEBRA DE LINHA WRAP */
+
+.container-flexwrap-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+
+.container-wrap-reverse{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+
+/* Forma abreviada Felx Fow pega os valores do flex direction e flex flow */
+
+.nome-propriedade-flex-flow {
+    font-size: 2em;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+
+
+
+}
+
+/* FLEX WRAP QUEBRA DE LINHA WRAP-REVERSE*/
+
+.container-flexflow-row-nowrap{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+
+
+/********************** Align-Content *******************/
+
+.nome-propriedade-align-content {
+    font-size: 2em;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+
+
+
+}
+
+/* FLEX ALIGN-CONTENT*/
+
+.container-align-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+.container-align-content-flex-start{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+
+}
+
+.container-align-content-flex-end{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+.container-align-content-space-between{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+.container-align-content-space-around{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+.container-align-content-space-evenly{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
+
+
+.container-align-content-inherit{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: inherit;
+    background-color: red;
+    border-radius: 20px;
+    border: 5px solid black;
+    height: 500px;
+}
